@@ -3,7 +3,7 @@ import Button from './Button';
 
 const CardComp = ({ name, price, image, description }) => {
     return (
-        <div className='p-4 text-white flex flex-col justify-center items-center '>
+        <div className='p-2 md:p-3 text-white flex flex-col justify-center items-center '>
             <img
                 src={image}
                 alt={name}
@@ -15,11 +15,11 @@ const CardComp = ({ name, price, image, description }) => {
             <div className='flex gap-5 justify-between'>
                 <Button
                     label='Buy Now'
-                    className='py-2 px-4 border-2 border-black rounded-md bg-green2 hover:border-white'
+                    className='px-3 py-2 md:px-4 border-2 border-black rounded-md bg-green2 hover:border-white'
                 />
                 <Button
                     label='Add to Cart'
-                    className='py-2 px-4 border-2 border-black rounded-md bg-red1 hover:border-white'
+                    className='py-2 px-3 md:px-4 border-2 border-black rounded-md bg-red1 hover:border-white'
                 />
             </div>
         </div>
